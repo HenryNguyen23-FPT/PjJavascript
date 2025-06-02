@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Preview</title>
+  <style>
+    #image {
+      background-color: #f2f2f2;
+      height: 200px;
+      width: 400px;
+      margin-bottom: 10px;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+    }
+    .preview {
+      width: 100px;
+      height: 75px;
+      margin: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<div id="image">Hover over an image below to display here.</div>
+
+<img class="preview" src="https://via.placeholder.com/100x75/0000FF/FFFFFF?text=1" alt="Image 1" onmouseover="upDate(this)" onmouseout="undo()">
+<img class="preview" src="https://via.placeholder.com/100x75/FF0000/FFFFFF?text=2" alt="Image 2" onmouseover="upDate(this)" onmouseout="undo()">
+<img class="preview" src="https://via.placeholder.com/100x75/00FF00/FFFFFF?text=3" alt="Image 3" onmouseover="upDate(this)" onmouseout="undo()">
+
+<script src="script.js"></script>
+</body>
+</html>
